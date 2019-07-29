@@ -1,883 +1,575 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-
 <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SemiColonWeb" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
 
-    <!-- Stylesheets
+	<!-- Stylesheets
 	============================================= -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700,900|Playfair+Display:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 
-    <!-- One Page Module Specific Stylesheet -->
-    <link rel="stylesheet" href="onepage.css" type="text/css" />
-    <!-- / -->
+	<!-- Resume Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/resume/resume.css" type="text/css" />
+	<link rel="stylesheet" href="demos/resume/css/fonts.css" type="text/css" />
+	<!-- / -->
 
-    <link rel="stylesheet" href="css/dark.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/et-line.css" type="text/css" />
-    <link rel="stylesheet" href="css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/colors.php?color=7B6ED6" type="text/css" />
 
-
-    <!-- Document Title
+	<!-- Document Title
 	============================================= -->
-    <title>One Page HTML5 Video | Canvas</title>
+	<title>Resume | Canvas</title>
 
 </head>
 
-<body class="stretched dark side-push-panel">
+<body class="stretched sticky-responsive-menu">
 
-    <div class="body-overlay"></div>
-
-    <div id="side-panel" class="dark">
-
-        <div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
-
-        <div class="side-panel-wrap">
-
-            <div class="widget widget_links clearfix">
-
-                <h4>About Canvas</h4>
-
-                <div style="font-size: 14px; line-height: 1.7;">
-                    <address style="line-height: 1.7;">
-						795 Folsom Ave, Suite 600<br>
-						San Francisco, CA 94107<br>
-					</address>
-
-                    <div class="clear topmargin-sm"></div>
-
-                    <abbr title="Phone Number">Phone:</abbr> (91) 8547 632521<br>
-                    <abbr title="Fax">Fax:</abbr> (91) 11 4752 1433<br>
-                    <abbr title="Email Address">Email:</abbr> info@canvas.com
-                </div>
-
-            </div>
-
-            <div class="widget quick-contact-widget clearfix">
-
-                <h4>Connect Socially</h4>
-
-                <a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
-                    <i class="icon-facebook"></i>
-                    <i class="icon-facebook"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
-                    <i class="icon-twitter"></i>
-                    <i class="icon-twitter"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-github" title="Github">
-                    <i class="icon-github"></i>
-                    <i class="icon-github"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-pinterest" title="Pinterest">
-                    <i class="icon-pinterest"></i>
-                    <i class="icon-pinterest"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-forrst" title="Forrst">
-                    <i class="icon-forrst"></i>
-                    <i class="icon-forrst"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-linkedin" title="LinkedIn">
-                    <i class="icon-linkedin"></i>
-                    <i class="icon-linkedin"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-gplus" title="Google Plus">
-                    <i class="icon-gplus"></i>
-                    <i class="icon-gplus"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-instagram" title="Instagram">
-                    <i class="icon-instagram"></i>
-                    <i class="icon-instagram"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-flickr" title="Flickr">
-                    <i class="icon-flickr"></i>
-                    <i class="icon-flickr"></i>
-                </a>
-                <a href="#" class="social-icon si-small si-colored si-skype" title="Skype">
-                    <i class="icon-skype"></i>
-                    <i class="icon-skype"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Document Wrapper
+	<!-- Document Wrapper
 	============================================= -->
-    <div id="wrapper" class="clearfix">
+	<div id="wrapper" class="clearfix">
 
-        <!-- Header
+		<!-- Header
 		============================================= -->
-        <header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" data-sticky-offset-negative="100">
+		<header id="header" class="transparent-header sticky-transparent static-sticky">
 
-            <div id="header-wrap">
+			<div id="header-wrap">
 
-                <div class="container clearfix">
+				<div class="container clearfix">
 
-                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                    <!-- Logo
+					<!-- Logo
 					============================================= -->
-                    <div id="logo">
-                        <a href="index.html" class="standard-logo" data-dark-logo="images/canvasone-dark.png"><img src="images/canvasone.png" alt="Canvas Logo"></a>
-                        <a href="index.html" class="retina-logo" data-dark-logo="images/canvasone-dark@2x.png"><img src="images/canvasone@2x.png" alt="Canvas Logo"></a>
-                    </div>
-                    <!-- #logo end -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo font-secondary ls3" style="line-height: 90px;">canvas</a>
+						<a href="index.html" class="retina-logo font-secondary ls3" style="line-height: 90px;">canvas</a>
+					</div><!-- #logo end -->
 
-                    <!-- Primary Navigation
+					<!-- Primary Navigation
 					============================================= -->
-                    <nav id="primary-menu">
+					<nav id="primary-menu">
 
-                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-                            <li>
-                                <a href="#" data-href="#wrapper">
-                                    <div>Home</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-href="#section-about">
-                                    <div>About</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-href="#section-works">
-                                    <div>Works</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-href="#section-services">
-                                    <div>Services</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-href="#section-blog">
-                                    <div>Blog</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-href="#section-contact">
-                                    <div>Contact</div>
-                                </a>
-                            </li>
-                        </ul>
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="0">
+							<li class="current"><a href="#" data-href="#wrapper"><i class="icon-line2-home"></i><div>Intro</div></a></li>
+							<li><a href="#" data-href="#section-skills"><i class="icon-line2-star"></i><div>Skills</div></a></li>
+							<li><a href="#" data-href="#section-about"><i class="icon-line2-user"></i><div>About</div></a></li>
+							<li><a href="#" data-href="#section-works"><i class="icon-line2-grid"></i><div>Portfolio</div></a></li>
+							<li><a href="#" data-href="#section-articles"><i class="icon-line2-pencil"></i><div>Articles</div></a></li>
+							<li><a href="#" data-href="#footer"><i class="icon-line2-envelope"></i><div>Contact</div></a></li>
+						</ul>
 
-                        <div id="side-panel-trigger" class="side-panel-trigger"><a href="#"><i class="icon-reorder"></i></a></div>
+					</nav><!-- #primary-menu end -->
 
-                    </nav>
-                    <!-- #primary-menu end -->
+				</div>
 
-                </div>
+			</div>
 
-            </div>
+		</header><!-- #header end -->
 
-        </header>
-        <!-- #header end -->
+		<section id="slider" class="slider-element full-screen force-full-screen clearfix">
+			<div class="full-screen force-full-screen" style="position: fixed; width: 100%; background: #FFF url('demos/resume/images/hero-image/1.jpg') no-repeat top center; background-size: cover; background-attachment: fixed;">
 
-        <!-- Slider
+				<div class="container clearfix">
+					<div class="slider-caption dark slider-caption-right">
+						<h2 class="font-primary ls5" data-animate="fadeIn">Pliff Jenkins</h2>
+						<p class="t300 ls1 d-none d-sm-block" data-animate="fadeIn" data-delay="400">Simple Design Methodology.<br>Melbourn, Australia.</p>
+						<a class="font-primary noborder ls1 topmargin-sm inline-block more-link text-white dark d-none d-sm-inline-block" data-animate="fadeIn" data-delay="800" data-scrollto="#section-works" data-offset="0" href="#"><u>My Works</u> &rarr;</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="full-screen force-full-screen blurred-img" style="position: fixed; width: 100%; top: 0; left: 0; background: #FFF url('demos/resume/images/hero-image/1.jpg') no-repeat top center; background-size: cover; background-attachment: fixed;"></div>
+		</section>
+
+		<!-- Content
 		============================================= -->
-        <section id="slider" class="slider-element slider-parallax full-screen force-full-screen">
+		<section id="content" class="nobg">
 
-            <div class="slider-parallax-inner">
+			<div class="content-wrap nobottompadding nobg">
 
-                <div class="full-screen force-full-screen dark section nopadding nomargin noborder ohidden">
+				<div id="section-skills" class="section nomargin page-section dark nobg clearfix" style="padding-bottom: 50px">
+					<div class="container clearfix">
+						<div class="heading-block">
+							<h2 class="font-secondary center">My Experiments.</h2>
+						</div>
 
-                    <div class="container center">
-                        <div class="vertical-middle ignore-header">
-                            <div class="emphasis-title">
-                                <h1>
-                                    <span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
-										<span class="t-rotate t700 font-body opm-large-word">canvas.|different.|creative.|digital.|vision.</span>
-                                    </span>
-                                </h1>
-                            </div>
-                            <a href="#" class="button button-border button-light button-rounded" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">View our Works</a>
-                        </div>
-                    </div>
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-html5" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">HTML5</h3>
+								<p style="color:#AAA;">Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+							</div>
+						</div>
 
-                    <div class="video-wrap">
-                        <video id="slide-video" poster="images/videos/1.jpg" preload="auto" loop muted autoplay>
-	                        <source src='images/videos/1.webm' type='video/webm' />
-	                        <source src='images/videos/1.mp4' type='video/mp4' />
-	                    </video>
-                        <div class="video-overlay" style="background-color: rgba(0,0,0,0.2);"></div>
-                    </div>
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-code" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">Javascripts</h3>
+								<p style="color:#AAA;">Looks beautiful &amp; ultra-sharp on Retina Displays with Retina Icons, Fonts &amp; Images.</p>
+							</div>
+						</div>
 
-                    <a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-picture" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">Photoshop</h3>
+								<p style="color:#AAA;">Optimized code that are completely customizable and deliver unmatched fast performance.</p>
+							</div>
+						</div>
 
-                </div>
+						<div class="clear"></div>
 
-            </div>
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-wordpress" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">Wordpress</h3>
+								<p style="color:#AAA;">Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
+							</div>
+						</div>
 
-        </section>
-        <!-- #slider end -->
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-line-layers" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">Joomla</h3>
+								<p style="color:#AAA;">Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
+							</div>
+						</div>
 
-        <!-- Content
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-line2-pencil" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">Illustrator</h3>
+								<p style="color:#AAA;">Complete control on each &amp; every element that provides endless customization possibilities.</p>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-css3" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">CSS3</h3>
+								<p style="color:#AAA;">Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-subscript" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">PHP</h3>
+								<p style="color:#AAA;">Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
+							</div>
+						</div>
+
+						<div class="col_one_third col_last">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon">
+									<a href="#"><i class="icon-search2" style="color: #DDD"></i></a>
+								</div>
+								<h3 class="t400 ls2" style="color: #FFF">Seo</h3>
+								<p style="color:#AAA;">We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div id="section-about" class="section page-section nomargin clearfix" style="background: #EEE url('demos/resume/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0">
+					<div class="container clearfix">
+						<div class="row clearfix">
+							<div class="col-md-5 offset-md-7 clearfix">
+								<div class="heading-block">
+									<h2 class="font-secondary"">About Me.</h2>
+									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium reprehenderit inventore beatae velit quae labore sunt in possimus. Mollitia, culpa?</span>
+								</div>
+								<table class="table">
+									<tbody>
+										<tr>
+											<td class="notopborder"><strong>Name:</strong></td>
+											<td class="notopborder">SemiColonWeb</td>
+										</tr>
+										<tr>
+											<td><strong>Gender:</strong></td>
+											<td>Male</td>
+										</tr>
+										<tr>
+											<td><strong>Email:</strong></td>
+											<td>noreply@canvas.com</td>
+										</tr>
+										<tr>
+											<td><strong>Phone:</strong></td>
+											<td>+91 111 222 33</td>
+										</tr>
+										<tr>
+											<td><strong>Website:</strong></td>
+											<td>semicolonweb.com</td>
+										</tr>
+										<tr>
+											<td><strong>DOB:</strong></td>
+											<td>6th September 1986</td>
+										</tr>
+										<tr>
+											<td><strong>Nationality:</strong></td>
+											<td>Australian</td>
+										</tr>
+									</tbody>
+								</table>
+								<a href="#" class="button button-large button-border button-black button-dark noleftmargin"><i class="icon-line-cloud-download"></i> Download CV</a>
+							</div>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="video-overlay d-sm-block d-md-none" style="background: rgba(255,255,255,0.9);"></div>
+					</div>
+				</div>
+
+				<div class="section nomargin skill-area bgcolor dark clearfix" style="padding: 80px 0;">
+					<div class="container clearfix">
+						<div class="row clearfix">
+							<div class="col-lg-4 col-md-6">
+								<h4>Education</h4>
+								<div class="skill-info">
+									<span>
+										School of Graphic Design<br>
+										Bachelor’s degree<br>
+										2010 – 2013
+									</span>
+									<span>
+										Forest Lake High School<br>
+										Degree in Computer Science<br>
+										2007 – 2010
+									</span>
+									<span>
+										Desert Sands Conservatory<br>
+										Arts School<br>
+										2007
+									</span>
+								</div>
+							</div>
+
+							<div class="w-100 bottommargin d-block d-md-none"></div>
+
+							<div class="col-lg-4 col-md-6">
+								<h4>Experience</h4>
+								<div class="skill-info">
+									<span>
+										2015 - Today<br>
+										Website Development
+									</span>
+									<span>
+										2015 - 2012<br>
+										Senior Frontend Developer<br>
+										Full Time Job
+									</span>
+									<span>
+										2015 - 2012<br>
+										Graphic Design Company<br>
+									</span>
+								</div>
+							</div>
+
+							<div class="w-100 bottommargin d-block d-lg-none clear"></div>
+
+							<div class="col-lg-4 col-12">
+								<h4>Skills</h4>
+								<ul class="skills">
+									<li data-percent="80">
+										<span>Wordpress</span>
+										<div class="progress">
+											<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="80" data-refresh-interval="30" data-speed="1100"></span>%</div></div>
+										</div>
+									</li>
+									<li data-percent="60">
+										<span>CSS3</span>
+										<div class="progress">
+											<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="60" data-refresh-interval="30" data-speed="1100"></span>%</div></div>
+										</div>
+									</li>
+									<li data-percent="90">
+										<span>HTML5</span>
+										<div class="progress">
+											<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="90" data-refresh-interval="30" data-speed="1100"></span>%</div></div>
+										</div>
+									</li>
+									<li data-percent="70">
+										<span>jQuery</span>
+										<div class="progress">
+											<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="70" data-refresh-interval="30" data-speed="1100"></span>%</div></div>
+										</div>
+									</li>
+									<li data-percent="52">
+										<span>Php</span>
+										<div class="progress">
+											<div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="52" data-refresh-interval="30" data-speed="1100"></span>%</div></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div id="section-works" class="section page-section nomargin clearfix" style="background: #EEE url('demos/resume/images/sections/2.jpg') no-repeat center right; background-size: cover; padding: 100px 0">
+					<div class="container clearfix">
+						<div class="row clearfix">
+							<div class="col-lg-5 offset-lg-1">
+								<div class="heading-block">
+									<h2 class="font-secondary">Latest Works.</h2>
+									<span class="notopmargin">Lorem ipsum dolor sit amet.</span>
+								</div>
+								<div class="row clearfix">
+									<div class="col-md-6">
+										<ul class="niche-demos-lists nobottommargin lists-1">
+											<li class="notopmargin"><a href="demo-restaurant.html"><img src="images/intro/niche/restaurant.jpg" alt="">Restaurant Demo</a></li>
+											<li><a href="demo-photography.html"><img src="images/intro/niche/photography.jpg" alt="">Photography</a></li>
+											<li><a href="demo-medical.html"><img src="images/intro/niche/medical.jpg" alt="">Medical</a></li>
+											<li><a href="demo-spa.html"><img src="images/intro/niche/spa.jpg" alt="">Spa</a></li>
+											<li><a href="demo-coffee.html"><img src="images/intro/niche/coffee.jpg" alt="">Coffee</a></li>
+											<li><a href="demo-interior-design.html"><img src="images/intro/niche/interior-design.jpg" alt="">Interior Design</a></li>
+											<li><a href="demo-barber.html"><img src="images/intro/niche/barber.jpg" alt="">Barber</a></li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul class="niche-demos-lists nobottommargin lists-2">
+											<li><a href="demo-travel.html"><img src="images/intro/niche/travel.jpg" alt="">Travel</a></li>
+											<li><a href="demo-media-agency.html"><img src="images/intro/niche/media-agency.jpg" alt="">Media Agency</a></li>
+											<li><a href="demo-construction.html"><img src="images/intro/niche/construction.jpg" alt="">Construction</a></li>
+											<li><a href="demo-writer.html"><img src="images/intro/niche/writer.jpg" alt="">Writer</a></li>
+											<li><a href="demo-real-estate.html"><img src="images/intro/niche/real-estate/1.jpg" alt="">Real Estate</a></li>
+											<li><a href="demo-business.html"><img src="images/intro/niche/business.jpg" alt="">Business</a></li>
+											<li><a href="demo-app-landing.html"><img src="images/intro/niche/app-landing.jpg" alt="">App Landing</a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="button button-large button-border button-black button-dark topmargin-sm noleftmargin"><i class="icon-line-stack-2"></i> See More Works</a>
+							</div>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="video-overlay d-block d-xl-none" style="background: rgba(255,255,255,0.9);"></div>
+					</div>
+				</div>
+
+				<div id="section-articles" class="section page-section nomargin bgcolor clearfix" style="padding: 100px 0">
+					<div class="container clearfix">
+
+						<div class="dark">
+							<div class="heading-block">
+								<h2 class="font-secondary">Latest Articles.</h2>
+								<span class="notopmargin">Lorem ipsum dolor sit amet.</span>
+							</div>
+						</div>
+
+						<div id="posts" class="post-grid grid-3 clearfix">
+
+							<div class="entry nobottomborder nobottompadding clearfix">
+								<div class="entry-box-shadow">
+									<div class="entry-image nobottommargin">
+										<a href="images/blog/full/17.jpg" data-lightbox="image"><img class="image_fade" src="demos/resume/images/blog/1.jpg" alt="Standard Post with Image"></a>
+									</div>
+									<div class="entry-meta-wrapper">
+										<div class="entry-meta nomargin clearfix">
+											<a href="#" class="text-muted">March 25th, 2016</a>
+										</div>
+										<div class="entry-title clearfix">
+											<h2><a href="#" style="">You can now listen to headphones.</a></h2>
+										</div>
+										<div class="entry-content clearfix">
+											<p class="nobottommargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="entry nobottomborder nobottompadding clearfix">
+								<div class="entry-box-shadow">
+									<div class="entry-image nobottommargin">
+										<a href="images/blog/full/17.jpg" data-lightbox="image"><img class="image_fade" src="demos/resume/images/blog/2.jpg" alt="Standard Post with Image"></a>
+									</div>
+									<div class="entry-meta-wrapper">
+										<div class="entry-meta nomargin clearfix">
+											<a href="#" class="text-muted">March 25th, 2016</a>
+										</div>
+										<div class="entry-title clearfix">
+											<h2><a href="#">Collaboratively monetize multifunctional.</a></h2>
+										</div>
+										<div class="entry-content clearfix">
+											<p class="nobottommargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="entry nobottomborder nobottompadding clearfix">
+								<div class="entry-box-shadow">
+									<div class="entry-image nobottommargin">
+										<a href="images/blog/full/17.jpg" data-lightbox="image"><img class="image_fade" src="demos/resume/images/blog/3.jpg" alt="Standard Post with Image"></a>
+									</div>
+									<div class="entry-meta-wrapper">
+										<div class="entry-meta nomargin clearfix">
+											<a href="#" class="text-muted">March 25th, 2016</a>
+										</div>
+										<div class="entry-title clearfix">
+											<h2><a href="#">Professionally disinter-mediate excellent.</a></h2>
+										</div>
+										<div class="entry-content clearfix">
+											<p class="nobottommargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
 		============================================= -->
-        <section id="content">
-
-            <div class="content-wrap nopadding">
-
-                <div id="section-about" class="center page-section">
-
-                    <div class="container clearfix">
-
-                        <h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">A digital web studio creating stunning &amp; engaging online experiences</h2>
-
-                        <p class="lead divcenter bottommargin" style="max-width: 800px;">Ford Foundation reduce child mortality fight against oppression refugee disruption pursue these aspirations effect. Free-speech Nelson Mandela change liberal; challenges of our times sustainability institutions.</p>
-
-                        <p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p>
-
-                        <div class="clear"></div>
-
-                        <div class="row topmargin-lg divcenter" style="max-width: 1000px;">
-
-                            <div class="col-md-4 bottommargin">
-
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="images/team/1.jpg" alt="John Doe">
-                                        <div class="team-overlay">
-                                            <div class="team-social-icons">
-                                                <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-                                                    <i class="icon-facebook"></i>
-                                                    <i class="icon-facebook"></i>
-                                                </a>
-                                                <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-                                                    <i class="icon-twitter"></i>
-                                                    <i class="icon-twitter"></i>
-                                                </a>
-                                                <a href="#" class="social-icon si-borderless si-small si-github" title="Github">
-                                                    <i class="icon-github"></i>
-                                                    <i class="icon-github"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-desc team-desc-bg">
-                                        <div class="team-title">
-                                            <h4>John Doe</h4><span>CEO</span></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 bottommargin">
-
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="images/team/2.jpg" alt="Josh Clark">
-                                        <div class="team-overlay">
-                                            <div class="team-social-icons">
-                                                <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-                                                    <i class="icon-twitter"></i>
-                                                    <i class="icon-twitter"></i>
-                                                </a>
-                                                <a href="#" class="social-icon si-borderless si-small si-linkedin" title="LinkedIn">
-                                                    <i class="icon-linkedin"></i>
-                                                    <i class="icon-linkedin"></i>
-                                                </a>
-                                                <a href="#" class="social-icon si-borderless si-small si-flickr" title="Flickr">
-                                                    <i class="icon-flickr"></i>
-                                                    <i class="icon-flickr"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-desc team-desc-bg">
-                                        <div class="team-title">
-                                            <h4>Mary Jane</h4><span>Co-Founder</span></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 bottommargin">
-
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="images/team/3.jpg" alt="Mary Jane">
-                                        <div class="team-overlay">
-                                            <div class="team-social-icons">
-                                                <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
-                                                    <i class="icon-twitter"></i>
-                                                    <i class="icon-twitter"></i>
-                                                </a>
-                                                <a href="#" class="social-icon si-borderless si-small si-vimeo" title="Vimeo">
-                                                    <i class="icon-vimeo"></i>
-                                                    <i class="icon-vimeo"></i>
-                                                </a>
-                                                <a href="#" class="social-icon si-borderless si-small si-instagram" title="Instagram">
-                                                    <i class="icon-instagram"></i>
-                                                    <i class="icon-instagram"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-desc team-desc-bg">
-                                        <div class="team-title">
-                                            <h4>Josh Clark</h4><span>Sales</span></div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="section-works" class="page-section notoppadding">
-
-                    <div class="section nomargin">
-                        <div class="container clearfix">
-                            <div class="divcenter center" style="max-width: 900px;">
-                                <h2 class="nobottommargin t300 ls1">We create &amp; craft projects that ooze creativity in every aspect. We try to create a benchmark in everything we do. Take a moment to browse through some of our recent completed work.</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Items
-					============================================= -->
-                    <div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
-
-                        <article class="portfolio-item pf-media pf-icons wide">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/1.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Open Imagination</a></h3>
-                                        <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item pf-illustrations">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/2.jpg" alt="Locked Steel Gate">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Locked Steel Gate</a></h3>
-                                        <span><a href="#">Illustrations</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item pf-graphics pf-uielements">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/3.jpg" alt="Mac Sunglasses">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Mac Sunglasses</a></h3>
-                                        <span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item pf-media pf-icons wide">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/4.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Open Imagination</a></h3>
-                                        <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item pf-uielements pf-media wide">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/5.jpg" alt="Console Activity">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Console Activity</a></h3>
-                                        <span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item pf-media pf-icons">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/6.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Open Imagination</a></h3>
-                                        <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item pf-uielements pf-icons">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/mixed/7.jpg" alt="Backpack Contents">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Backpack Contents</a></h3>
-                                        <span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
-                    <!-- #portfolio end -->
-
-                    <div class="topmargin center"><a href="#" class="button button-border button-circle t600">View More Projects</a></div>
-
-                </div>
-
-                <div id="section-services" class="page-section notoppadding">
-
-                    <div class="section nomargin">
-                        <div class="container clearfix">
-                            <div class="divcenter center" style="max-width: 900px;">
-                                <h2 class="nobottommargin t300 ls1">We enjoy working on the Services &amp; Products we provide as much as you need them. This help us in delivering your Goals easily. Browse through the wide range of services we provide.</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row common-height">
-
-                        <div class="col-lg-4 d-none d-md-block" style="background: url('images/services/main-bg.jpg') center center no-repeat; background-size: cover;"></div>
-                        <div class="col-lg-8">
-                            <div class="max-height">
-                                <div class="row common-height grid-border clearfix">
-                                    <div class="col-lg-4 col-md-6 col-padding">
-                                        <div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-                                            <div class="fbox-icon">
-                                                <a href="#"><i class="icon-et-mobile"></i></a>
-                                            </div>
-                                            <h3>Responsive Framework</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-padding">
-                                        <div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-                                            <div class="fbox-icon">
-                                                <a href="#"><i class="icon-et-presentation"></i></a>
-                                            </div>
-                                            <h3>Beautifully Presented</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-padding">
-                                        <div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-                                            <div class="fbox-icon">
-                                                <a href="#"><i class="icon-et-puzzle"></i></a>
-                                            </div>
-                                            <h3>Extensively Extendable</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-padding">
-                                        <div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-                                            <div class="fbox-icon">
-                                                <a href="#"><i class="icon-et-gears"></i></a>
-                                            </div>
-                                            <h3>Powerfully Customizable</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-padding">
-                                        <div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-                                            <div class="fbox-icon">
-                                                <a href="#"><i class="icon-et-genius"></i></a>
-                                            </div>
-                                            <h3>Geniusly Transformable</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-padding">
-                                        <div class="feature-box fbox-center fbox-dark fbox-plain fbox-small nobottomborder">
-                                            <div class="fbox-icon">
-                                                <a href="#"><i class="icon-et-hotairballoon"></i></a>
-                                            </div>
-                                            <h3>Industrial Support</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="section dark nomargin">
-                        <div class="divcenter center" style="max-width: 900px;">
-                            <h2 class="nobottommargin t300 ls1">Like Our Services? Get an <a href="#" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle button-light button-large notopmargin nobottommargin"
-                                    style="position: relative; top: -3px;">Instant Quote</a></h2>
-                        </div>
-                    </div>
-
-                    <div class="section parallax nomargin dark" style="background-image: url('images/page/testimonials.jpg'); padding: 150px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -200px;">
-
-                        <div class="container clearfix">
-
-                            <div class="col_two_fifth nobottommargin">&nbsp;</div>
-
-                            <div class="col_three_fifth nobottommargin col_last">
-
-                                <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
-                                    <div class="flexslider">
-                                        <div class="slider-wrap">
-                                            <div class="slide">
-                                                <div class="testi-content">
-                                                    <p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque vero numquam?</p>
-                                                    <div class="testi-meta">
-                                                        Steve Jobs
-                                                        <span>Apple Inc.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slide">
-                                                <div class="testi-content">
-                                                    <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-                                                    <div class="testi-meta">
-                                                        Collis Ta'eed
-                                                        <span>Envato Inc.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="slide">
-                                                <div class="testi-content">
-                                                    <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
-                                                    <div class="testi-meta">
-                                                        John Doe
-                                                        <span>XYZ Inc.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="section-blog" class="page-section">
-
-                    <h2 class="center uppercase t300 ls3 font-body">Recently From the Blog</h2>
-
-                    <div class="section nobottommargin">
-                        <div class="container clearfix">
-
-                            <div class="row topmargin clearfix">
-
-                                <div class="ipost col-md-6 bottommargin clearfix">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="entry-image nobottommargin">
-                                                <a href="#"><img src="images/blog/1.jpg" alt="Paris"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6" style="margin-top: 20px;">
-                                            <span class="before-heading" style="font-style: normal;">Press &amp; Media</span>
-                                            <div class="entry-title">
-                                                <h3 class="t400" style="font-size: 22px;"><a href="#">Global Meetup Program is Launching!</a></h3>
-                                            </div>
-                                            <div class="entry-content">
-                                                <a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="ipost col-md-6 bottommargin clearfix">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="entry-image nobottommargin">
-                                                <a href="#"><img src="images/blog/2.jpg" alt="Paris"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6" style="margin-top: 20px;">
-                                            <span class="before-heading" style="font-style: normal;">Inside Scoops</span>
-                                            <div class="entry-title">
-                                                <h3 class="t400" style="font-size: 22px;"><a href="#">The New YouTube Economy unfolds itself</a></h3>
-                                            </div>
-                                            <div class="entry-content">
-                                                <a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="ipost col-md-6 bottommargin clearfix">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="entry-image nobottommargin">
-                                                <a href="#"><img src="images/blog/3.jpg" alt="Paris"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6" style="margin-top: 20px;">
-                                            <span class="before-heading" style="font-style: normal;">Video Blog</span>
-                                            <div class="entry-title">
-                                                <h3 class="t400" style="font-size: 22px;"><a href="#">Kicking Off Design Party in Style</a></h3>
-                                            </div>
-                                            <div class="entry-content">
-                                                <a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="ipost col-md-6 bottommargin clearfix">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="entry-image nobottommargin">
-                                                <a href="#"><img src="images/blog/4.jpg" alt="Paris"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6" style="margin-top: 20px;">
-                                            <span class="before-heading" style="font-style: normal;">Inspiration</span>
-                                            <div class="entry-title">
-                                                <h3 class="t400" style="font-size: 22px;"><a href="#">Top Ten Signs You're a Designer</a></h3>
-                                            </div>
-                                            <div class="entry-content">
-                                                <a href="#" class="more-link">Read more <i class="icon-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="container topmargin-lg clearfix">
-
-                        <div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/1.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/2.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/3.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/4.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/5.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/6.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/7.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/8.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/9.png" alt="Clients"></a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="#"><img src="images/clients/10.png" alt="Clients"></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="section-contact" class="page-section notoppadding">
-
-                    <div class="container clearfix">
-
-                        <div class="divcenter topmargin" style="max-width: 850px;">
-
-                            <div class="contact-widget">
-
-                                <div class="contact-form-result"></div>
-
-                                <form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
-
-                                    <div class="form-process"></div>
-
-                                    <div class="col_half">
-                                        <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
-                                    </div>
-                                    <div class="col_half col_last">
-                                        <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email Address" />
-                                    </div>
-
-                                    <div class="clear"></div>
-
-                                    <div class="col_one_third">
-                                        <input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control border-form-control" placeholder="Phone" />
-                                    </div>
-
-                                    <div class="col_two_third col_last">
-                                        <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control border-form-control" placeholder="Subject" />
-                                    </div>
-
-                                    <div class="clear"></div>
-
-                                    <div class="col_full">
-                                        <textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30" placeholder="Your Message"></textarea>
-                                    </div>
-
-                                    <div class="col_full center">
-                                        <button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
-                                        <br>
-                                        <small style="display: block; font-size: 13px; margin-top: 15px;">We'll do our best to get back to you within 6-8 working hours.</small>
-                                    </div>
-
-                                    <div class="clear"></div>
-
-                                    <div class="col_full hidden">
-                                        <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-                                    </div>
-
-                                </form>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- #content end -->
-
-        <!-- Footer
-		============================================= -->
-        <footer id="footer" class="dark noborder">
-
-            <div class="container center">
-                <div class="footer-widgets-wrap">
-
-                    <div class="row divcenter clearfix">
-
-                        <div class="col-lg-4">
-
-                            <div class="widget clearfix">
-                                <h4>Site Links</h4>
-
-                                <ul class="list-unstyled footer-site-links nobottommargin">
-                                    <li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-                                    <li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-                                    <li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-                                    <li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-                                    <li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
-                                    <li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-4">
-
-                            <div class="widget subscribe-widget clearfix" data-loader="button">
-                                <h4>Subscribe</h4>
-
-                                <div class="widget-subscribe-form-result"></div>
-                                <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
-                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Your Email Address">
-                                    <button class="button button-border button-circle button-light topmargin-sm" type="submit">Subscribe Now</button>
-                                </form>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-4">
-
-                            <div class="widget clearfix">
-                                <h4>Contact</h4>
-
-                                <p class="lead">795 Folsom Ave, Suite 600<br>San Francisco, CA 94107</p>
-
-                                <div class="center topmargin-sm">
-                                    <a href="#" class="social-icon inline-block noborder si-small si-facebook" title="Facebook">
-                                        <i class="icon-facebook"></i>
-                                        <i class="icon-facebook"></i>
-                                    </a>
-                                    <a href="#" class="social-icon inline-block noborder si-small si-twitter" title="Twitter">
-                                        <i class="icon-twitter"></i>
-                                        <i class="icon-twitter"></i>
-                                    </a>
-                                    <a href="#" class="social-icon inline-block noborder si-small si-github" title="Github">
-                                        <i class="icon-github"></i>
-                                        <i class="icon-github"></i>
-                                    </a>
-                                    <a href="#" class="social-icon inline-block noborder si-small si-pinterest" title="Pinterest">
-                                        <i class="icon-pinterest"></i>
-                                        <i class="icon-pinterest"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="copyrights">
-                <div class="container center clearfix">
-                    Copyright Canvas 2015 | All Rights Reserved
-                </div>
-            </div>
-
-        </footer>
-        <!-- #footer end -->
-
-    </div>
-    <!-- #wrapper end -->
-
-    <!-- Go To Top
+		<footer id="footer" class="page-section dark noborder nopadding clearfix" style="background-color: #1C1C1C;">
+
+			<div class="container clearfix">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix" style="padding: 80px 0">
+					<div class="col_one_fourth">
+						<div class="footer-logo"><span class="t400 color ls1" style="font-size: 22px; ">SemiColonWeb.</span><br><small class="ls3 uppercase" style="color: rgba(255,255,255,0.2);">&copy; 2017 Reserved.</small></div>
+					</div>
+					<div class="col_three_fourth col_last">
+						<div class="col_one_third">
+							<div class="widget widget_links clearfix">
+								<h4>Contact Us</h4>
+								<div class="footer-content">
+									<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
+									<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+								</div>
+							</div>
+						</div>
+						<div class="col_one_third">
+							<div class="widget clearfix">
+								<h4>Location</h4>
+								<div class="footer-content">
+									<address>
+										<strong>Headquarters:</strong><br>
+										795 Folsom Ave, Suite 600<br>
+										San Francisco, CA 94107<br>
+									</address>
+								</div>
+							</div>
+						</div>
+						<div class="col_one_third col_last">
+							<div class="widget widget_links clearfix">
+								<h4>Social</h4>
+								<a href="#" class="social-icon nobg si-small si-light si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+								<a href="#" class="social-icon nobg si-small si-light si-twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+								<a href="#" class="social-icon nobg si-small si-light si-gplus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+								<a href="#" class="social-icon nobg si-small si-light si-instagram">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
+								<a href="#" class="social-icon nobg si-small si-light si-dribbble">
+									<i class="icon-dribbble"></i>
+									<i class="icon-dribbble"></i>
+								</a>
+
+								<a href="#" class="social-icon nobg si-small si-light si-vimeo">
+									<i class="icon-vimeo"></i>
+									<i class="icon-vimeo"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" style="background-color: #111;">
+
+				<div class="container clearfix">
+
+					<div class="col_full center nobottommargin">
+						Copyrights &copy; 2017 All Rights Reserved by Canvas Inc.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
 	============================================= -->
-    <div id="gotoTop" class="icon-angle-up"></div>
+	<div id="gotoTop" class="icon-angle-up"></div>
 
-    <!-- External JavaScripts
+	<!-- External JavaScripts
 	============================================= -->
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
 
-    <!-- Footer Scripts
+	<!-- Footer Scripts
 	============================================= -->
-    <script src="js/functions.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(window).scroll(function() {
+			var pixs = jQuery(window).scrollTop(),
+				opacity = pixs / 650,
+				element = jQuery( '.blurred-img' ),
+				elementHeight = element.outerHeight(),
+				elementNextHeight = jQuery('.content-wrap').find('.page-section').first().outerHeight();
+			if( ( elementHeight + elementNextHeight + 50 ) > pixs ) {
+				element.addClass('blurred-image-visible');
+				element.css({ 'opacity': opacity });
+			} else {
+				element.removeClass('blurred-image-visible');
+			}
+		});
+	</script>
+
 </body>
-
 </html>
