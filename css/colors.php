@@ -1,3 +1,46 @@
+<?php
+
+header ("Content-Type:text/css");
+
+/** ===============================================================
+ *
+ *      Edit your Color Configurations below:
+ *      You should only enter 6-Digits HEX Colors.
+ *
+ ================================================================== */
+
+$color = "#1ABC9C"; // Change your Color Here
+
+/** ===============================================================
+ *
+ *      Do not Edit anything below this line if you do not know
+ *      what you are trying to do..!
+ *
+ ================================================================== */
+
+function checkhexcolor($color) {
+
+	return preg_match('/^#[a-f0-9]{6}$/i', $color);
+
+}
+
+/** ===============================================================
+ *
+ *      Primary Color Scheme
+ *
+ ================================================================== */
+
+if( isset( $_GET[ 'color' ] ) AND $_GET[ 'color' ] != '' ) {
+	$color = "#" . $_GET[ 'color' ];
+}
+
+if( !$color OR !checkhexcolor( $color ) ) {
+	$color = "#1ABC9C";
+}
+
+?>
+
+
 /* ----------------------------------------------------------------
 	Colors
 
@@ -5,11 +48,11 @@
 -----------------------------------------------------------------*/
 
 
-::selection { background: #7B6ED6; }
+::selection { background: <?php echo $color; ?>; }
 
-::-moz-selection { background: #7B6ED6; }
+::-moz-selection { background: <?php echo $color; ?>; }
 
-::-webkit-selection { background: #7B6ED6; }
+::-webkit-selection { background: <?php echo $color; ?>; }
 
 
 a,
@@ -57,7 +100,7 @@ h6 > span:not(.nocolor):not(.badge),
 .btn-link,
 .dark .post-timeline .entry:hover .entry-timeline,
 .dark .post-timeline .entry:hover .timeline-divider,
-.clear-rating-active:hover { color: #7B6ED6; }
+.clear-rating-active:hover { color: <?php echo $color; ?>; }
 
 .color,
 .top-cart-item-desc a:hover,
@@ -72,7 +115,7 @@ h6 > span:not(.nocolor):not(.badge),
 .overlay-menu #primary-menu.dark > ul > li.current > a,
 .nav-tree li:hover > a,
 .nav-tree li.current > a,
-.nav-tree li.active > a { color: #7B6ED6 !important; }
+.nav-tree li.active > a { color: <?php echo $color; ?> !important; }
 
 #primary-menu.style-3 > ul > li.current > a,
 #primary-menu.sub-title > ul > li:hover > a,
@@ -130,7 +173,7 @@ input.switch-toggle-flat:checked + label:after,
 input.switch-toggle-round:checked + label:before,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-themecolor,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-themecolor,
-.entry:after { background-color: #7B6ED6; }
+.entry:after { background-color: <?php echo $color; ?>; }
 
 .bgcolor,
 .button.button-3d:not(.button-white):not(.button-dark):not(.button-border):not(.button-black):not(.button-red):not(.button-teal):not(.button-yellow):not(.button-green):not(.button-brown):not(.button-aqua):not(.button-purple):not(.button-leaf):not(.button-pink):not(.button-blue):not(.button-dirtygreen):not(.button-amber):not(.button-lime):hover,
@@ -141,7 +184,7 @@ input.switch-toggle-round:checked + label:before,
 .owl-carousel .owl-nav [class*=owl-]:hover,
 .page-item.active .page-link,
 .page-link:hover,
-.page-link:focus { background-color: #7B6ED6 !important; }
+.page-link:focus { background-color: <?php echo $color; ?> !important; }
 
 #primary-menu.style-4 > ul > li:hover > a,
 #primary-menu.style-4 > ul > li.current > a,
@@ -156,7 +199,7 @@ input.switch-toggle-round:checked + label:before,
 .dark .post-timeline .entry:hover .entry-timeline,
 .dark .post-timeline .entry:hover .timeline-divider,
 .dark .cart-product-thumbnail img:hover,
-.heading-block.border-color:after { border-color: #7B6ED6; }
+.heading-block.border-color:after { border-color: <?php echo $color; ?>; }
 
 .top-links ul ul,
 .top-links ul div.top-link-section,
@@ -176,12 +219,12 @@ input.switch-toggle-round:checked + label:before,
 .tabs.tabs-tb ul.tab-nav li.ui-tabs-active a,
 .irs-from:after,
 .irs-single:after,
-.irs-to:after { border-top-color: #7B6ED6; }
+.irs-to:after { border-top-color: <?php echo $color; ?>; }
 
 #page-menu.dots-menu nav li div:after,
-.title-block { border-left-color: #7B6ED6; }
+.title-block { border-left-color: <?php echo $color; ?>; }
 
-.title-block-right { border-right-color: #7B6ED6; }
+.title-block-right { border-right-color: <?php echo $color; ?>; }
 
 .fancy-title.title-bottom-border h1,
 .fancy-title.title-bottom-border h2,
@@ -190,7 +233,7 @@ input.switch-toggle-round:checked + label:before,
 .fancy-title.title-bottom-border h5,
 .fancy-title.title-bottom-border h6,
 .more-link,
-.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a { border-bottom-color: #7B6ED6; }
+.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a { border-bottom-color: <?php echo $color; ?>; }
 
 .border-color,
 .process-steps li.active a,
@@ -198,15 +241,15 @@ input.switch-toggle-round:checked + label:before,
 .tagcloud a:hover,
 .page-item.active .page-link,
 .page-link:hover,
-.page-link:focus { border-color: #7B6ED6 !important; }
+.page-link:focus { border-color: <?php echo $color; ?> !important; }
 
 .fbox-effect.fbox-dark .fbox-icon i:after,
-.dark .fbox-effect.fbox-dark .fbox-icon i:after { box-shadow: 0 0 0 2px #7B6ED6; }
+.dark .fbox-effect.fbox-dark .fbox-icon i:after { box-shadow: 0 0 0 2px <?php echo $color; ?>; }
 
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i,
 .dark .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
-.dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i { box-shadow: 0 0 0 1px #7B6ED6; }
+.dark .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i { box-shadow: 0 0 0 1px <?php echo $color; ?>; }
 
 
 @media only screen and (max-width: 991px) {
@@ -217,15 +260,14 @@ input.switch-toggle-round:checked + label:before,
 	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu > div > ul > li.current a,
 	#primary-menu ul ul li:hover > a,
 	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a,
-	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: #7B6ED6 !important; }
+	#primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover { color: <?php echo $color; ?> !important; }
 
-	#page-menu nav { background-color: #7B6ED6; }
+	#page-menu nav { background-color: <?php echo $color; ?>; }
 
 }
 
 
 @media only screen and (max-width: 767px) {
 
-	.portfolio-filter li a:hover { color: #7B6ED6; }
-
-}
+	.portfolio-filter li a:hover { color: <?php echo $color; ?>; }
+.}
