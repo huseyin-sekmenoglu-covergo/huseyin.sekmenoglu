@@ -169,7 +169,8 @@ body {
 
 a {
 	text-decoration: none !important;
-	color: #1ABC9C;
+	color: #ccc;
+	font-weight: bold;
 }
 
 a:hover { color: #222; }
@@ -406,7 +407,7 @@ span.middot {
 }
 
 .bgcolor,
-.bgcolor #header-wrap { background-color: #1ABC9C !important; }
+.bgcolor #header-wrap { background-color: #7B6ED6 !important; }
 
 .color { color: #1ABC9C !important; }
 
@@ -11165,14 +11166,6 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .heading-block h4 + span { font-size: 20px; }
 
 .heading-block ~ p:not(.lead) { font-size: 15px; }
-
-.heading-block:after {
-	content: '';
-	display: block;
-	margin-top: 30px;
-	width: 40px;
-	border-top: 2px solid #444;
-}
 
 .center .heading-block:after,
 .heading-block.center:after,
