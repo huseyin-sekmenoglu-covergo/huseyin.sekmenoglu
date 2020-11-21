@@ -1,1 +1,8 @@
+/* COMPANY */
+Sekmen.Dev
+/* TEAM */
 Hüseyin Sekmenoğlu
+/* SITE */
+Name: Portfolio
+Language: English
+Web: https://sekmen.dev/
