@@ -38,10 +38,10 @@
                   <a href="#" data-href="#wrapper"><i class="icon-line2-home"></i><div>Intro</div></a>
                 </li>
                 <li>
-                  <a href="#" data-href="#section-skills"><i class="icon-line2-star"></i><div>Skills</div></a>
+                  <a href="#" data-href="#section-skills"><i class="icon-line2-star"></i><div>My Experience</div></a>
                 </li>
                 <li>
-                  <a href="#" data-href="#section-works"><i class="icon-line2-grid"></i><div>Portfolio</div></a>
+                  <a href="#" data-href="#section-works"><i class="icon-line2-grid"></i><div>Lastest Works</div></a>
                 </li>
                 <li>
                   <a href="#" data-href="#footer"><i class="icon-line2-envelope"></i><div>Contact</div></a>
@@ -64,8 +64,8 @@
                 <span
                   >Experience with:
                   <ul>
-                    <li>.Net</li>
-                    <li>Devops</li>
+                    <li>.Net, C#</li>
+                    <li>Azure, Docker, Kubernetes</li>
                     <li>MsSql, Mysql</li>
                     <li>Jquery, Vue, Angular, React</li>
                     <li>UmbracoCms, AspNet Zero</li>
@@ -152,7 +152,7 @@
                   </div>
                   <h3 class="t400 ls2" style="color: #fff;">Net Framework</h3>
                   <p style="color: #aaa;">
-                    Asp.Net, .Net Core
+                    Asp.Net, .Net Core, C#
                   </p>
                 </div>
               </div>
@@ -857,7 +857,7 @@
             <div class="col_one_fourth">
               <div class="footer-logo">
                 <span class="t400 ls1" style="font-size: 22px;"
-                  >Sekmen.Dev.</span
+                  >Sekmen.Dev</span
                 ><br />Hüseyin Sekmenoğlu
               </div>
             </div>
@@ -865,21 +865,29 @@
               <div class="widget widget_links clearfix">
                 <h4>Contact Us</h4>
                 <div class="footer-content">
-                  <abbr title="Github"><strong>Github:</strong></abbr>
+                  <strong>Email:</strong>
+                  <span class="mail">
+                    <span class="spamspan">
+                        <span class="u">huseyin</span>
+                        [at]
+                        <span class="d">sekmen [dot] dev</span>
+                    </span>
+                </span><br />
+                  <strong>Github:</strong>
                   <a
                     href="https://github.com/sekmenhuseyin"
                     target="_blank"
                     title="Github"
                     >https://github.com/sekmenhuseyin</a
                   ><br />
-                  <abbr title="LinkedIn"><strong>LinkedIn:</strong></abbr>
+                  <strong>LinkedIn:</strong>
                   <a
                     href="https://linkedin.com/in/sekmenhuseyin"
                     target="_blank"
                     title="LinkedIn"
                     >https://linkedin.com/in/sekmenhuseyin</a
                   ><br />
-                  <abbr title="Blog"><strong>Blog:</strong></abbr>
+                  <strong>Blog:</strong>
                   <a
                     href="https://huseyinsekmenoglu.net/"
                     target="_blank"
@@ -914,25 +922,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/functions.js"></script>
-    <script>
-      jQuery(window).scroll(function () {
-        var pixs = jQuery(window).scrollTop(),
-          opacity = pixs / 650,
-          element = jQuery(".blurred-img"),
-          elementHeight = element.outerHeight(),
-          elementNextHeight = jQuery(".content-wrap")
-            .find(".page-section")
-            .first()
-            .outerHeight();
-        if (elementHeight + elementNextHeight + 50 > pixs) {
-          element.addClass("blurred-image-visible");
-          element.css({
-            opacity: opacity,
-          });
-        } else {
-          element.removeClass("blurred-image-visible");
-        }
-      });
-    </script>
+    <script src="js/spamspan.min.js"></script>
   </body>
 </html>

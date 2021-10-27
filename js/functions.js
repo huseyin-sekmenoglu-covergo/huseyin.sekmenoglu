@@ -3744,3 +3744,22 @@ var SEMICOLON = SEMICOLON || {};
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
 })(jQuery);
+
+jQuery(window).scroll(function () {
+	var pixs = jQuery(window).scrollTop(),
+	  opacity = pixs / 650,
+	  element = jQuery(".blurred-img"),
+	  elementHeight = element.outerHeight(),
+	  elementNextHeight = jQuery(".content-wrap")
+		.find(".page-section")
+		.first()
+		.outerHeight();
+	if (elementHeight + elementNextHeight + 50 > pixs) {
+	  element.addClass("blurred-image-visible");
+	  element.css({
+		opacity: opacity,
+	  });
+	} else {
+	  element.removeClass("blurred-image-visible");
+	}
+  });
