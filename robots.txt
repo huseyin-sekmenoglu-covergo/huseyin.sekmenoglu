@@ -1,0 +1,6 @@
+# XML Sitemaps
+Sitemap: https://huseyin.sekmen.dev/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /404/

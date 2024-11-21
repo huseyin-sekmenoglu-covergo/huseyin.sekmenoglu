@@ -2,7 +2,9 @@
 Sekmen.Dev
 /* TEAM */
 Hüseyin Sekmenoğlu
+Zeliha Sekmenoğlu
+Amine Sekmenoğlu
 /* SITE */
 Name: Portfolio
 Language: English
-Web: https://sekmen.dev/
+Web: https://huseyin.sekmen.dev/
